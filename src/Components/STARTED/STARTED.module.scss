@@ -1,0 +1,60 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+
+.text{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    h3{
+        background: linear-gradient(-5deg, #0CBAF1, #E95CE9); // 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      
+    }
+    h1{
+        color: white;
+    }
+}
+
+
+
+.img{
+    img{
+        width: 100%;
+    }
+}
+
+
+
+
+
+.button_gradient {
+    margin: 0 auto;
+    width: 182px;
+    display: inline-block;
+    padding: 10px 20px; // Внутренние отступы
+    font-size: 14px;
+    font-weight: 700;
+    color: white; // Цвет текста
+    text-transform: uppercase; // Верхний регистр
+    background: linear-gradient(90deg, #0CBAF1, #E95CE9); // Градиентный фон
+    border: none; // Убираем границы
+    border-radius: 8px; // Скругленные углы
+    cursor: pointer; // Указатель мыши при наведении
+    transition: all 0.3s ease; // Анимация при наведении
+  
+    &:hover {
+      opacity: 0.9; // Легкое затемнение при наведении
+      transform: scale(1.05); // Увеличение кнопки при наведении
+    }
+  
+    &:active {
+      transform: scale(0.98); // Эффект нажатия
+    }
+  }

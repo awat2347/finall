@@ -1,0 +1,41 @@
+.wrapper{
+   
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   gap: 32px;
+   @media (max-width:700px) {
+    display: grid;
+    grid-template-columns: 1fr;
+   }
+}
+
+.card{
+    background-color: #25253299;
+    // max-width: 250px;
+    border-radius: 20px;
+    text-align: center;
+     padding: 25px;
+    display: flex;
+    padding: 60px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    img{
+        max-width: 65px;
+        max-height: 65px;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        h3{
+            background: linear-gradient(90deg, #00eaff, #ff00cc); // Градиент
+            -webkit-background-clip: text; // Для клипирования фона текстом
+            -webkit-text-fill-color: transparent; // Прозрачный текст
+            text-fill-color: transparent; // Прозрачный текст для совместимости
+        }
+        h2{
+            color: white;
+        }
+    }
+}

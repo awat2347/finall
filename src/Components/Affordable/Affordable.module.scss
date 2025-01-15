@@ -1,0 +1,119 @@
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+  p{
+    background: linear-gradient(-0.2deg, #00c6ff, #f007ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  h1{
+    color: white;
+    font-size: 36px;
+  }
+  h4{
+    color: #a0a0a0; 
+    max-width: 645px;
+ 
+ }
+}
+
+
+.card{
+
+  align-items: start;
+  display: flex;
+  gap: 16px;
+  max-width: 640px;
+  div{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    h4{
+      color: white;
+      font-size: 18px;
+      font-weight: 400;
+    }
+    p{
+      color: #a0a0a0;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}
+
+.box{
+  @media (max-width:700px) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  position: relative;
+  display: grid;
+  background-color: #252532af;
+ grid-template-columns: 2.6fr 1fr;
+}
+
+.Packages{
+  
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.started{
+  @media (max-width:700px) {
+    top: 650px;
+    padding: 10px;
+  }
+  position: absolute;
+  top: 300px;
+  border-radius: 20px;
+  right: 200px;
+  max-width: 221px;
+  text-align: center;
+  background-color: #2d2d39fb;
+  padding: 22px;
+display: flex;
+flex-direction: column;
+gap: 14px;
+  h4{
+    color: rgb(191, 191, 191);
+  }
+  h1{
+    color: white;
+  }
+
+  button{
+    
+  padding: 18px;
+  border: none; // Убираем рамку
+  
+  background: linear-gradient(90deg, #00c6ff, #f007ff);
+  color: white; // Цвет текста
+  cursor: pointer; // Курсор при наведении
+  transition: transform 0.5s ease, background-color 0.3s ease; // Плавный переход
+
+  &:hover {
+    transform: scale(1.1); // Увеличение кнопки
+    background-color: rgba(255, 255, 255, 0.1); // Полупрозрачный фон
+  }
+  }
+}
+.start{
+  
+  padding: 0px;
+
+  border-left: 1px solid rgba(255, 255, 255, 0.647);
+}
+

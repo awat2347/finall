@@ -1,0 +1,138 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 700px) {
+        display: flex;
+        flex-direction: column;
+      }
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      
+        p{
+            font-weight: 500;
+            font-size: 16px;
+            background: linear-gradient(-5deg, #0CBAF1, #E95CE9); // 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h1{
+        color: white;
+        font-size: 48px;
+
+        }
+    }
+}
+.p{
+    max-width: 625px;
+    p{
+        color: #9e9e9e
+    }
+}
+.box{
+    display: flex;
+    gap: 30px;
+    @media (max-width: 700px) {
+      display: flex;
+      flex-direction: column;
+    }
+}
+
+.vr{
+ background-color: #25253299;
+ gap: 58px;
+ padding: 32px;
+ display: flex;
+ flex-direction: column;
+ position: relative;
+ &:hover .learnMore {
+    bottom: 20px; // Поднимаем кнопку вверх при наведении
+    opacity: 1;
+    box-shadow: 0px 0px 51px 26px #000000;
+  }
+  &:hover::after {
+    background: rgba(0, 0, 0, 0.171); // Затемнение фона при наведении
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); // Начальное состояние без затемнения
+    transition: background 0.3s ease-in-out;
+    z-index: 1;
+  }
+
+
+ img{
+    width: 100%;
+    max-width: 48px;
+    max-height: 48px;
+    object-fit: cover;
+ }
+ h1{
+    color: white
+ }
+ p{
+    color: #9e9e9e
+}
+div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    z-index: 2;
+}
+}
+
+.vr_block_1{
+    margin-top: 46px;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+   
+}
+.vr_block_2{
+    margin-top: 103px;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+.vr_block_3{
+    margin-top: 181px;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+.learnMore {
+    position: absolute;
+    bottom: -60px; // Начальное положение кнопки (скрыта)
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    background: linear-gradient(to left, #00bcd4, #8e44ad); // Градиент
+     border: 1px solid transparent; // Граница по умолчанию прозрачная
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    opacity: 0; // Изначально кнопка прозрачна
+    z-index: 2;
+  
+    &:hover {
+      scale: 1.1; 
+      background: linear-gradient(to left, #00bbd4e1, #8d44addc); // Градиент
+    }
+
+  }

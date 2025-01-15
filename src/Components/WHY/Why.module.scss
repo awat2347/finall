@@ -1,0 +1,98 @@
+// Why.module.scss
+.Why {
+  
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    @media (max-width: 700px) {
+      display: flex;
+      flex-direction: column;
+    }
+    
+}
+
+.card {
+    img{
+        width: 100%;
+    }
+@media (max-width: 700px) {
+  img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+}
+
+.accordion {
+    flex-grow: 1;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 29px;
+    
+}
+
+.accordionItem {
+    border-bottom: 1px solid #444;
+    text-align: left;
+    ;
+    &:last-child {
+       
+    }
+
+    .accordionHeader {
+        display: flex;
+        justify-content: space-between;
+       
+        padding: 15px;
+        color: white;
+        cursor: pointer;
+        transition: 1s;
+
+        &:hover {
+            background-color: #55555517;
+        }
+
+        .arrow {
+            transition: transform 0.3s;
+        }
+
+        .open {
+            transform: rotate(180deg);
+        }
+    }
+
+    .accordionContent {
+        padding: 15px;
+        background-color: #3c3c3c69;
+        color: white;
+        max-width: 550px;
+        border: 0.5px dashed rgb(110, 92, 92);
+    }
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    h3{
+        background: linear-gradient(-20deg, #0ff, #f0f, );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    h1{
+        font-size: 48px;
+        color: white;
+    }
+}

@@ -1,0 +1,102 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text{
+    text-align: center;
+    max-width: 751px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    h3{
+        
+        background: linear-gradient(-5deg, #0CBAF1, #E95CE9); // 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    h1{
+        color: white;
+    }
+    p{
+        color: rgb(167, 167, 167);
+    }
+        
+}
+
+
+.cards{
+ 
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,0.7fr);
+    gap: 62px;
+    @media (max-width: 730px) {
+    grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    padding: 34px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    background-color: #252532;
+    border: 1px solid transparent;
+    border-radius: 0; /* Начальное значение */
+    transition: all 0.7s ease-in-out;
+    
+    h4 {
+      color: white;
+    }
+  
+    h5 {
+      color: #b0b0b2;
+    }
+  
+    button {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+      background-color: #1e1e1e;
+      border: 1px solid;
+      border-image-source: linear-gradient(to right, #00d1ff, #ff00e5);
+      border-image-slice: 1;
+      text-align: center;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    &:hover {
+      border-image-source: linear-gradient(to right, #00d1ff, #ff00e5);
+      border-image-slice: 1;
+      background-color: #2a2a3b;
+      border-radius: 20px; 
+      button {
+        background: linear-gradient(to right, #00d1ff, #ff00e5);
+        color: #000;
+      }
+    }
+  }
+  
+
+.month{
+    h1{
+        color: white;
+    }
+    p{
+        color: #71717A;
+    }
+    display: flex;
+    align-items: end;
+}
+
+.check{
+    display: flex;
+    gap: 6px;
+}

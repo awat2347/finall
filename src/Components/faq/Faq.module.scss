@@ -1,0 +1,76 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+    max-width: 704px;
+  
+    h1 {
+      font-size: 32px;
+      color: white;
+    }
+  
+    h3 {
+      background: linear-gradient(-5deg, #0CBAF1, #E95CE9);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  
+    p {
+      color: rgb(151, 151, 151);
+    }
+  }
+  
+  .accordion {
+   
+    cursor: pointer;
+    width: 100%;
+    max-width: 704px; // Убедитесь, что аккордеон не превышает ширину текста
+  
+    &Item {
+      border: 1px solid transparent; // Изначально граница прозрачная
+      margin: 10px 0;
+      border-radius: 5px;
+      overflow: hidden;
+      transition: border 0.3s;
+  
+      &Title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+  
+        h2 {
+          margin: 0;
+          flex: 1; // Занимает оставшееся место
+        }
+  
+        &.icon {
+          margin-left: 10px; // Отступ для символа
+        }
+  
+        &:hover {
+          background-color: transparent; // Убираем фон при наведении
+        }
+      }
+  
+      &Content {
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.1); // Полупрозрачный фон для содержимого
+        border-top: 1px solid rgba(255, 255, 255, 0.5); // Полупрозрачная граница
+      }
+  
+      &.active {
+        border: 1px solid transparent; // Задаем прозрачный бордер
+        background: linear-gradient(135deg, #0cbcf14d, #e95ce962); // Градиентный фон
+      }
+    }
+  }

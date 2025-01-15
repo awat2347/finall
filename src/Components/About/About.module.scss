@@ -1,0 +1,78 @@
+.wrapper{
+    display: flex;
+    @media (max-width: 700px) {
+      display: flex;
+      flex-direction: column;
+    }
+}
+
+
+.box{
+    img{
+        width: 100%;
+    }
+}
+
+.about_us{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 562px;
+
+    h3{
+       
+       
+        background: linear-gradient(-5deg, #0CBAF1, #E95CE9); // 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      
+        
+    }
+
+    h1{
+        color: white;
+        font-size: 48px;
+        font-weight: 600;
+    }
+    p{
+        color: #adadad;
+        max-width: 528px;
+    }
+}
+
+.check{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    div{
+        display: flex;
+        gap: 15px;
+        p{
+            color: white;
+        }
+    }
+}
+
+.button_gradient {
+    display: inline-block;
+    padding: 10px 20px; // Внутренние отступы
+    font-size: 14px;
+    font-weight: 700;
+    color: white; // Цвет текста
+    text-transform: uppercase; // Верхний регистр
+    background: linear-gradient(90deg, #0CBAF1, #E95CE9); // Градиентный фон
+    border: none; // Убираем границы
+    border-radius: 8px; // Скругленные углы
+    cursor: pointer; // Указатель мыши при наведении
+    transition: all 0.3s ease; // Анимация при наведении
+  
+    &:hover {
+      opacity: 0.9; // Легкое затемнение при наведении
+      transform: scale(1.05); // Увеличение кнопки при наведении
+    }
+  
+    &:active {
+      transform: scale(0.98); // Эффект нажатия
+    }
+  }
+  
